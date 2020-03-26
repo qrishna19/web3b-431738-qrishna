@@ -3,6 +3,7 @@ import { Carousel, Col, Row, Badge } from 'antd';
 import '../assets/css/Product.css';
 import CardProduct from '../common/component/CardProduct';
 import TextAnim from '../common/component/TextAnim/TextAnim';
+import { Link } from 'react-router-dom';
 
 const clothData = [
     {
@@ -67,10 +68,12 @@ class Product extends Component {
               </div>
               <div className="troley">
                 <Badge count={this.state.order}>
+                <Link to='/Order'>
                 <img
                   src="https://etanee.id/img/icon/ic_cart_white.svg"
                   alt=""
                 />
+                </Link>
                 </Badge>
               </div>
             </div>
